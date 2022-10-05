@@ -13,7 +13,7 @@ nav ul {
   align-items: center;
 }
 
-nav .sticky {
+.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
 }
@@ -43,6 +43,10 @@ nav a:visited {
   border-radius: var(--medium);
   background-color: var(--color-1);
   color: #222;
+}
+
+.link-btn:hover {
+  background-color: var(--dark-1);
 }
 
 header {
@@ -89,7 +93,7 @@ h1 {
   height: 30rem;
 }
 
-header button {
+.btn-scroll {
   display: inline-block;
   background: none;
   font-family: inherit;

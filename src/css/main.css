@@ -7,8 +7,9 @@
 .feature img {
   width: 100%;
   height: 100%;
-  /* border: var(--test); */
-  /* filter: blur(20px); */
+}
+.lazy-img {
+  filter: blur(20px);
 }
 
 .feature-text {
@@ -96,7 +97,7 @@
   height: 50rem;
   margin: 0 auto;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .slide {
@@ -157,6 +158,7 @@
 .dots-dot {
   border: none;
   background-color: #b9b9b9;
+  padding: 0;
   opacity: 0.7;
   height: 1rem;
   width: 1rem;
@@ -176,11 +178,6 @@
 }
 
 /********************************************************************/
-
-.slide-2,
-.slide-3 {
-  display: none;
-}
 
 .testimonial {
   width: 65%;
@@ -247,4 +244,8 @@ h6 {
   font-size: 1.9rem;
   padding: 2rem 5rem;
   margin-top: 10rem;
+}
+
+.sign-up button:hover {
+  background-color: var(--dark-1);
 }

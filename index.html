@@ -12,17 +12,20 @@
     <link rel="stylesheet" href="src/css/header.css" />
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/other.css" />
+    <script type="module" src="src/js/script.js"></script>
     <title>Banking | Meet Minimalism</title>
   </head>
   <body>
     <header>
       <nav>
         <img class="logo" src="src/img/logo.png" alt="Bank logo" />
-        <ul>
-          <li><a href="#section-1">Features</a></li>
-          <li><a href="#section-2">Operations</a></li>
-          <li><a href="#section-3">Testimonials</a></li>
-          <li><a class="link-btn" href="#">Open Account</a></li>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#section-1">Features</a></li>
+          <li><a class="nav-link" href="#section-2">Operations</a></li>
+          <li><a class="nav-link" href="#section-3">Testimonials</a></li>
+          <li>
+            <a class="link-btn nav-link show-modal" href="#">Open Account</a>
+          </li>
         </ul>
       </nav>
 
@@ -36,7 +39,7 @@
             >
           </h1>
           <h4>A simpler banking experience for a simpler life.</h4>
-          <button>Learn more &DownArrow;</button>
+          <button class="btn-scroll">Learn more &DownArrow;</button>
         </div>
         <img class="header-img" src="src/img/hero.png" alt="Bank items" />
       </div>
@@ -54,6 +57,7 @@
               src="src/img/digital-lazy.jpg"
               data-src="src/img/digital.jpg"
               alt="Computer"
+              class="lazy-img"
             />
             <div class="feature-text">
               <div class="svg-wrapper">
@@ -90,6 +94,7 @@
               src="src/img/grow-lazy.jpg"
               data-src="src/img/grow.jpg"
               alt="Plant"
+              class="lazy-img"
             />
           </div>
 
@@ -98,6 +103,7 @@
               src="src/img/card-lazy.jpg"
               data-src="src/img/card.jpg"
               alt="Credit card"
+              class="lazy-img"
             />
             <div class="feature-text">
               <div class="svg-wrapper">
@@ -125,11 +131,15 @@
 
         <article class="operations">
           <div class="operations-container">
-            <button class="tab tab-1 tab-active">
+            <button data-set="1" class="tab tab-1 tab-active">
               <span>01</span>Instant Transfers
             </button>
-            <button class="tab tab-2"><span>02</span>Instant Loans</button>
-            <button class="tab tab-3"><span>03</span>Instant Closing</button>
+            <button data-set="2" class="tab tab-2">
+              <span>02</span>Instant Loans
+            </button>
+            <button data-set="3" class="tab tab-3">
+              <span>03</span>Instant Closing
+            </button>
           </div>
 
           <div class="content content-1 content-active">
@@ -265,9 +275,9 @@
 
           <button class="slider-btn-left">&larr;</button>
           <button class="slider-btn-right">&rarr;</button>
-        </article>
 
-        <div class="dots"></div>
+          <div class="dots"></div>
+        </article>
       </section>
 
       <section class="sign-up">

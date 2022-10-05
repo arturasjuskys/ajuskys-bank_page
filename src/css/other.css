@@ -1,12 +1,23 @@
 .cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  padding: 2rem;
+  margin: 0.8rem 0;
+  width: 90%;
+  border-radius: var(--medium);
   background-color: white;
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400px;
+  z-index: 100;
+}
+.cookie-message button {
+  margin-left: 2rem;
 }
 
 /******************************************************************************/

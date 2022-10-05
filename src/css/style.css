@@ -46,9 +46,9 @@ main {
 section {
   padding: 15rem 3rem;
   border-top: 1px solid #ddd;
-  transition: transform 1s, opacity 1s;
   max-width: 120rem;
   margin: 0 auto;
+  transition: transform 1s, opacity 1s;
 }
 
 .section-hidden {
@@ -87,10 +87,6 @@ button {
   border-radius: var(--medium);
   cursor: pointer;
   transition: all 0.3s;
-}
-
-button:hover {
-  background-color: var(--dark-1);
 }
 
 h4 {
