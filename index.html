@@ -4,41 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/png" href="src/img/icon.png" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/other.css" />
     <title>Banking | Meet Minimalism</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="#" alt="Bank logo" />
+        <img class="logo" src="src/img/logo.png" alt="Bank logo" />
         <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Operations</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Open Account</a></li>
+          <li><a href="#section-1">Features</a></li>
+          <li><a href="#section-2">Operations</a></li>
+          <li><a href="#section-3">Testimonials</a></li>
+          <li><a class="link-btn" href="#">Open Account</a></li>
         </ul>
       </nav>
 
-      <div>
-        <h1>
-          When
-          <!-- brand color -->
-          <span class="brand">banking</span> meets<br /><span class="brand"
-            >minimalism</span
-          >
-        </h1>
-        <h4>A simpler banking experience for a simpler life.</h4>
-        <button>Learn more &DownArrow;</button>
-        <img src="#" alt="Bank items" />
+      <div class="hero">
+        <div class="hero-text">
+          <h1>
+            When
+            <!-- brand color -->
+            <span class="brand">banking</span> meets<br /><span class="brand"
+              >minimalism</span
+            >
+          </h1>
+          <h4>A simpler banking experience for a simpler life.</h4>
+          <button>Learn more &DownArrow;</button>
+        </div>
+        <img class="header-img" src="src/img/hero.png" alt="Bank items" />
       </div>
     </header>
     <main>
       <section id="section-1">
         <article class="title">
-          <h2>Heatures</h2>
+          <h2>Features</h2>
           <h3>Everything you need in a modern bank and more.</h3>
         </article>
 
@@ -50,10 +56,12 @@
               alt="Computer"
             />
             <div class="feature-text">
-              <svg>
-                <!-- access icon from one .SVG file => # => id name -->
-                <use xlink:href="src/img/icons.svg#icon-monitor"></use>
-              </svg>
+              <div class="svg-wrapper">
+                <svg>
+                  <!-- access icon from one .SVG file => # => id name -->
+                  <use xlink:href="src/img/icons.svg#icon-monitor"></use>
+                </svg>
+              </div>
               <h5>100% digital bank</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
@@ -64,16 +72,13 @@
           </div>
 
           <div class="feature">
-            <img
-              src="src/img/grow-lazy.jpg"
-              data-src="src/img/grow.jpg"
-              alt="Plant"
-            />
             <div class="feature-text">
-              <svg>
-                <!-- access icon from one .SVG file => # => id name -->
-                <use xlink:href="src/img/icons.svg#icon-trending-up"></use>
-              </svg>
+              <div class="svg-wrapper">
+                <svg>
+                  <!-- access icon from one .SVG file => # => id name -->
+                  <use xlink:href="src/img/icons.svg#icon-trending-up"></use>
+                </svg>
+              </div>
               <h5>Watch your money grow</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
@@ -81,6 +86,11 @@
                 officiis vero consequatur! Necessitatibus!
               </p>
             </div>
+            <img
+              src="src/img/grow-lazy.jpg"
+              data-src="src/img/grow.jpg"
+              alt="Plant"
+            />
           </div>
 
           <div class="feature">
@@ -90,10 +100,18 @@
               alt="Credit card"
             />
             <div class="feature-text">
-              <svg>
-                <!-- access icon from one .SVG file => # => id name -->
-                <use xlink:href="src/img/icons.svg#icon-credit-card"></use>
-              </svg>
+              <div class="svg-wrapper">
+                <svg>
+                  <!-- access icon from one .SVG file => # => id name -->
+                  <use xlink:href="src/img/icons.svg#icon-credit-card"></use>
+                </svg>
+              </div>
+              <h5>Free debit card included</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officia distinctio itaque tenetur veniam ratione, explicabo odio
+                hic ad asperiores cum.
+              </p>
             </div>
           </div>
         </article>
@@ -110,15 +128,17 @@
             <button class="tab tab-1 tab-active">
               <span>01</span>Instant Transfers
             </button>
-            <button class="tab tab-2"><span>01</span>Instant Loans</button>
-            <button class="tab tab-3"><span>01</span>Instant Closing</button>
+            <button class="tab tab-2"><span>02</span>Instant Loans</button>
+            <button class="tab tab-3"><span>03</span>Instant Closing</button>
           </div>
 
           <div class="content content-1 content-active">
-            <svg>
-              <!-- access icon from one .SVG file => # => id name -->
-              <use xlink:href="src/img/icons.svg#icon-upload"></use>
-            </svg>
+            <div class="svg-wrapper svg-1">
+              <svg>
+                <!-- access icon from one .SVG file => # => id name -->
+                <use xlink:href="src/img/icons.svg#icon-upload"></use>
+              </svg>
+            </div>
             <div class="content-text">
               <h5>Tranfser money to anyone, instantly! No fees, no BS.</h5>
               <p>
@@ -130,10 +150,12 @@
             </div>
           </div>
           <div class="content content-2">
-            <svg>
-              <!-- access icon from one .SVG file => # => id name -->
-              <use xlink:href="src/img/icons.svg#icon-home"></use>
-            </svg>
+            <div class="svg-wrapper svg-2">
+              <svg>
+                <!-- access icon from one .SVG file => # => id name -->
+                <use xlink:href="src/img/icons.svg#icon-home"></use>
+              </svg>
+            </div>
             <div class="content-text">
               <h5>
                 Buy a home or make your dreams come true, with instant loans.
@@ -147,10 +169,12 @@
             </div>
           </div>
           <div class="content content-3">
-            <svg>
-              <!-- access icon from one .SVG file => # => id name -->
-              <use xlink:href="src/img/icons.svg#icon-user-x"></use>
-            </svg>
+            <div class="svg-wrapper svg-3">
+              <svg>
+                <!-- access icon from one .SVG file => # => id name -->
+                <use xlink:href="src/img/icons.svg#icon-user-x"></use>
+              </svg>
+            </div>
             <div class="content-text">
               <h5>
                 No longer need your account? No problem! Close it instantly.
@@ -187,8 +211,10 @@
               </blockquote>
               <address class="author">
                 <img src="src/img/user-1.jpg" alt="" />
-                <h6>Aarav Lynn</h6>
-                <p>San Francisco, USA</p>
+                <div class="author-text">
+                  <h6>Aarav Lynn</h6>
+                  <p>San Francisco, USA</p>
+                </div>
               </address>
             </div>
           </div>
@@ -207,13 +233,15 @@
               </blockquote>
               <address class="author">
                 <img src="src/img/user-2.jpg" alt="" />
-                <h6>Miyah Miles</h6>
-                <p>London, UK</p>
+                <div class="author-text">
+                  <h6>Miyah Miles</h6>
+                  <p>London, UK</p>
+                </div>
               </address>
             </div>
           </div>
 
-          <div class="slide slide-1">
+          <div class="slide slide-3">
             <div class="testimonial">
               <h5>Finally free from old-school banks</h5>
               <blockquote>
@@ -227,20 +255,22 @@
               </blockquote>
               <address class="author">
                 <img src="src/img/user-1.jpg" alt="" />
-                <h6>Francisco Gomes</h6>
-                <p>Lisbon, Portugal</p>
+                <div class="author-text">
+                  <h6>Francisco Gomes</h6>
+                  <p>Lisbon, Portugal</p>
+                </div>
               </address>
             </div>
           </div>
-        </article>
 
-        <button class="slider-btn-left">&larr;</button>
-        <button class="slider-btn-right">&rarr;</button>
+          <button class="slider-btn-left">&larr;</button>
+          <button class="slider-btn-right">&rarr;</button>
+        </article>
 
         <div class="dots"></div>
       </section>
 
-      <section class="section-sign-up">
+      <section class="sign-up">
         <article class="title">
           <h3>
             The best day to join Bankist was one year ago. The second best is
@@ -248,22 +278,6 @@
           </h3>
           <button class="show-modal">Open your free account today!</button>
         </article>
-      </section>
-
-      <section class="modal hidden">
-        <button class="close-modal">&times;</button>
-        <h2>
-          Open your account <br />in just <span class="brand">5 minutes</span>
-        </h2>
-        <form>
-          <label>First Name</label>
-          <input type="text" />
-          <label>Last Name</label>
-          <input type="text" />
-          <label>Email</label>
-          <input type="text" />
-          <button>Next Step &rarr;</button>
-        </form>
       </section>
     </main>
 
@@ -280,5 +294,22 @@
       <img src="src/img/icon.png" alt="Logo" />
       <p class="copyright">Copyright by <a href="#">Artūras Juškys</a></p>
     </footer>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2>
+        Open your account <br />in just <span class="brand">5 minutes</span>
+      </h2>
+      <form>
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="text" />
+        <button>Next Step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>

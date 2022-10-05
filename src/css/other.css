@@ -1,0 +1,125 @@
+.cookie-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  color: #bbb;
+  font-size: 1.5rem;
+  font-weight: 400px;
+}
+
+/******************************************************************************/
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  border-radius: var(--medium);
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal h2 {
+  font-size: 3.25rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+}
+
+.modal form {
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.modal input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: solid 1px #ddd;
+  border-radius: var(--small);
+}
+
+.modal button {
+  margin-top: 1rem;
+}
+
+.close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.close-modal:hover {
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/***************************************************************/
+
+footer {
+  background-color: #37383d;
+  padding: 10rem 3rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+footer li {
+  margin-right: 4rem;
+}
+
+footer a {
+  color: #eee;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+footer img {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+}
