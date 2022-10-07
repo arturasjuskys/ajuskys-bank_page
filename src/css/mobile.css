@@ -172,8 +172,9 @@
 
   /*********************************************************************/
 
-  .cookie-message {
-    width: 80%;
+  footer {
+    padding: 3rem;
+    padding-top: 6rem;
   }
 
   footer ul {
@@ -183,5 +184,31 @@
 
   footer li {
     margin-right: 0;
+  }
+
+  /*********************************************************************/
+
+  .cookie-message {
+    width: 95%;
+    padding: 1rem;
+    line-height: 1.3;
+  }
+
+  .cookie-message button {
+    padding: 1rem;
+    width: 10rem;
+    margin-left: 0rem;
+  }
+
+  .modal {
+    width: 95%;
+  }
+
+  .modal h2 {
+    font-size: 2rem;
+  }
+
+  .modal form {
+    margin: 0;
   }
 }
